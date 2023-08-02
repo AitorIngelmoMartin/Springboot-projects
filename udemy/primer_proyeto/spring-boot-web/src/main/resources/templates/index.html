@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http//www.thymeleaf.org">
 <head>
-    <meta charset='utf-8' />
-    <title>IndexPage</title>
+    <meta charset='UTF-8' />
+    <title th:text="${titulo}"></title>
 </head>
 <body>
-    <h1>Titulo de SpringBoot</h1>
-    
+    <h1 th:text="${titulo}"></h1>    
     <h2>Segundo titulo</h2>
 
     <p>Esto es un párrafo para comprobar el UTF-8. Por lo que 
