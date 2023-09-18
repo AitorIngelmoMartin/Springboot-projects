@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http//www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset='UTF-8' />
     <title th:text="${titulo}"></title>
@@ -10,6 +10,11 @@
     <span th:text="${usuario.nombre}"></span>
     <span th:text="${usuario.apellido}"></span>
 
-    <p>Esto es el párrafo de 'perfil.html'</p>
+    <br>
+    <span th:if="${usuario.email}" th:text="${usuario.email}"></span>
+    <span th:if="${usuario.email == null}">El usuario no tiene correo definido</span>
+
+
+    <p>Esto es el párrafo de el fichero 'perfil.html'. El cual es accedido desde /app/perfil</p>
 </body>
 </html>
