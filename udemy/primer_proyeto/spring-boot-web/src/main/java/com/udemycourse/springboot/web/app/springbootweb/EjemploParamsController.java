@@ -3,8 +3,6 @@ package com.udemycourse.springboot.web.app.springbootweb;
 
 import org.springframework.ui.Model;
 
-import java.text.NumberFormat;
-
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
