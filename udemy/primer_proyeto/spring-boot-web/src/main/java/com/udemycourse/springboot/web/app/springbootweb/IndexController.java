@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/app")
+@RequestMapping("/app") //Esta es la ruta raíz. A partir de esta se accede a las demás
 public class IndexController {
     //Los metodos siempre van a ser publicos
     
-    //@RequestMapping(value = '/index',method=RequestMethod.GET) //Es GET por defecto, pero podemso especificar
+    //@RequestMapping(value = '/index',method=RequestMethod.GET) //Es GET por defecto, pero podemos especificar
     @GetMapping(value = {"/index","","/","/home"})//Esta opción es igual pero especificada
     public String index(Model model){
         model.addAttribute("titulo","Titulo pasado por model");

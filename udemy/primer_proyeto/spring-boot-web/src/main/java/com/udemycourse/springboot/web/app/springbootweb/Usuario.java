@@ -1,5 +1,5 @@
 package com.udemycourse.springboot.web.app.springbootweb;
-
+//Esta es una clase POJO(Plain Old Java Object). Es decir, es una clase simple que contiene atributos para sus datos
 public class Usuario {
     private String nombre;
     private String apellido;
